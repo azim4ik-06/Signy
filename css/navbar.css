@@ -1,0 +1,19 @@
+.dropdown-menu{
+    background: rgb(239, 246, 253);
+    border-radius: 0;
+}
+.dropdown-item:hover{
+    background: rgb(226, 237, 251);
+}
+.dropdown-toggle::after{
+    background-image: url("../images/icons/down.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-top: 0;
+    width: 5px;
+    height: 5px;
+}
+.dropdown-toggle::before{
+    background-image: url("../images/icons/up.svg");
+}

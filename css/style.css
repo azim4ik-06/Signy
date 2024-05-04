@@ -1,0 +1,67 @@
+body{
+    font-family: 'IBM Plex Sans';
+    color: rgba(6, 18, 36, 0.9);
+}
+.header{
+    background: rgb(222, 238, 252);
+    padding: 0 5%;
+    overflow: hidden;
+    height: 70vh;
+}
+.nav-item, .btn-sign-in, .btn-log-in{
+    font-size: 14px;
+    font-weight: 500;
+}
+.btn-sign-in{
+    border: 1.5px solid rgb(16, 100, 229);
+    border-radius: 43px;
+    color: rgba(6, 18, 36, 0.9);
+    padding: 8px 32px;
+}
+.btn-sign-in:hover{
+    border-radius: 39px;
+    background: rgb(16, 100, 229);;
+    color: #fff;
+}
+.btn-log-in{
+    border-radius: 45px;
+    background: rgb(16, 100, 229);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 8px 32px;
+}
+.btn-log-in:hover{
+    border: 1.5px solid rgb(16, 100, 229);
+    border-radius: 43px;
+    color: rgba(6, 18, 36, 0.9);
+    padding: 8px 32px;
+}
+.line{
+    width: 16px;
+    border: 1.5px solid rgb(16, 100, 229);
+    margin: 12px 16px 16px 16px;
+}
+.text-header{
+    margin-top: 5%;
+}
+.header-text{
+    font-family: 'IBM Plex Serif';
+    width: 580px;
+}
+.text_header{
+    width: 430px;
+}
+.btn-header{
+    border-radius: 45px;
+    background: rgb(16, 100, 229);
+    font-weight: 700;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 7px 25px;
+}
+.btn-header:hover{
+    border: 1.5px solid rgb(16, 100, 229);
+    border-radius: 43px;
+    color: rgba(6, 18, 36, 0.9);
+    padding: 7px 25px;
+}
