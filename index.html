@@ -11,7 +11,7 @@
     <title>Signy</title>
 </head>
 <body>
-    <div class="header">
+    <div class="header position-relative">
         <nav class="navbar navbar-expand-lg d-flex justify-content-center align-items-center">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><img src="images/icons/Logo.svg" alt=""></a>
@@ -43,7 +43,7 @@
                     <a class="nav-link" href="#">ЦЕНЫ</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">КОНТАКТЫ</a>
+                    <a class="nav-link" href="#">КОНТАКТЫ</a>
                   </li>
                   <li>
                     <button class="btn btn-sign-in" type="button">ВХОД</button>
@@ -65,18 +65,102 @@
               </div>
             </div>
         </nav>
-        <div class="carusel position-relative">
-            <div class="text-header">
-                <h1 class="header-text">Цифровой документооборот в три этапа:</h1>
-                <h5 class="d-flex">1 <hr class="line"> <span style="color: rgb(6, 18, 36); font-size: 18px;">2</span> <hr class="line"> <span style="color: rgb(6, 18, 36); font-size: 18px;">3</span></h5>
-                <h3>Быстрая регистрация</h3>
-                <p class="text_header">Мы создали, возможно, самую простую регистрацию. 
-                    Регистрируйся, получай полный доступ к сервису и 
-                    1000 подписей документов в подарок!</p>
-                <button class="btn btn-header" type="button">Попробовать Бесплатно</button>
-            </div>
+        <div class="carusel">
+          <img src="images/header-img-1.png" class="header-img active" alt="">
+          <img src="images/header-img-2.png" class="header-img" alt="">
+          <img src="images/header-img-3.png" class="header-img" alt="">
+          <div class="text-header active">
+              <h1 class="header-text">Цифровой документооборот в три этапа:</h1>
+              <h5 class="d-flex">1 <hr class="line"> <span style="color: rgb(6, 18, 36, 0.5); font-size: 18px; padding-top:2px">2</span> <hr class="line"> <span style="color: rgba(6, 18, 36, 0.5); font-size: 18px; padding-top:2px">3</span></h5>
+              <h3>Быстрая регистрация</h3>
+              <p class="text_header">Мы создали, возможно, самую простую регистрацию. 
+                  Регистрируйся, получай полный доступ к сервису и 
+                  1000 подписей документов в подарок!</p>
+              <button class="btn btn-header" type="button">Попробовать Бесплатно</button>
+          </div>
+          <div class="text-header">
+            <h1 class="header-text">Цифровой документооборот в три этапа:</h1>
+            <h5 class="d-flex"><span style="color: rgb(6, 18, 36, 0.5); font-size: 18px; padding-top:2px">1</span><hr class="line"> 2 <hr class="line"> <span style="color: rgb(6, 18, 36, 0.5); font-size: 18px; padding-top:2px">3</span></h5>
+            <h3>Загрузи документ</h3>
+            <p class="text_header">Загружай в систему любой документ которые надо
+              подписать, договор, акт выполненных работ,
+              да что угодно</p>
+            <button class="btn btn-header" type="button">Попробовать Бесплатно</button>
+        </div>
+        <div class="text-header">
+          <h1 class="header-text">Цифровой документооборот в три этапа:</h1>
+          <h5 class="d-flex"><span style="color: rgb(6, 18, 36, 0.5); font-size: 18px; padding-top:2px">1</span> <hr class="line"> <span style="color: rgb(6, 18, 36, 0.5); font-size: 18px; padding-top:2px">2</span> <hr class="line"> 3</h5>
+          <h3>Подпиши и отправь</h3>
+          <p class="text_header">Подписывай своей электронно-цифровой подписью и 
+            за долю секунды отправь партнеру или компании.
+            Он подписывает в ответ и все! Готово! </p>
+          <button class="btn btn-header" type="button">Попробовать Бесплатно</button>
+      </div>
+          <div class="slide-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+          </div>
         </div>
     </div>
+    <div class="d-flex justify-content-center align-items-center mt-4 mb-4">
+      <div class="card mb-3 border-0">
+        <div class="d-flex align-items-center">
+          <div class="col-md-4 d-flex justify-content-end">
+            <img src="images/icons/speedometer.svg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Моментально</h5>
+              <p class="card-text">Никаких задержек.
+                1 секунда на подписание</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 border-0">
+        <div class="d-flex align-items-center">
+          <div class="col-md-4 d-flex justify-content-end">
+            <img src="images/icons/positive-vote.svg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Глобально</h5>
+              <p class="card-text">Сервис доступен 24\7 со всех устройств</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 border-0">
+        <div class="d-flex align-items-center">
+          <div class="col-md-4 d-flex justify-content-end">
+            <img src="images/icons/piggy-bank.svg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Экономно</h5>
+              <p class="card-text">В 30 раз дешевле чем почта и курьеры</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="information">
+      <div class="d-flex">
+        <div class="info-text flex-column">
+          <h1>Комфорт в работе</h1>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
 </body>
 <script src="js/navbar.js"></script>
+<script src="js/carusel.js"></script>
 </html>

@@ -8,10 +8,22 @@ function navbarShow() {
     collapse.classList.toggle('show');
 }
 
-for (let i = 0; i < dropDown.length; i++) {
-    dropDown[i].addEventListener('click', dropShow.bind(null, i));
-  }
-  
-  function dropShow(index) {
-    dropMenu[index].classList.toggle('show');
-  }
+let dropShow = function(manual) {
+  dropMenu.forEach((btn, index) => {
+    if (index !== manual) {
+      btn.classList.remove('show');
+    }
+  });
+
+  dropMenu[manual].classList.toggle('show');
+};
+
+dropDown.forEach((btn, i) => {
+  btn.addEventListener('click', () => {
+    dropShow(i);
+  });
+
+  dropMenu[i].addEventListener('click', () => {
+    dropShow(i);
+  });
+});

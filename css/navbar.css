@@ -17,3 +17,21 @@
 .dropdown-toggle::before{
     background-image: url("../images/icons/up.svg");
 }
+
+.nav-link, .dropdown-item{
+    position: relative;
+    transition: 0.3s ease;
+}
+.nav-link::before, .dropdown-item::before{
+    content: '';
+    position: absolute;
+    background-color: #1064E5;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s ease;
+}
+.nav-link:hover:before, .dropdown-item:hover:before{
+    width: 100%;
+}
