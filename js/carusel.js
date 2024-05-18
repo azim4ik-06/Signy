@@ -1,4 +1,5 @@
 const btns = document.querySelectorAll('.nav-btn');
+const navBtn = document.querySelectorAll('.nav-btn-friend')
 const slides = document.querySelectorAll('.header-img');
 const contents = document.querySelectorAll('.text-header');
 
@@ -23,5 +24,17 @@ let sliderNav = function(manual){
 btns.forEach((btn, i) => {
     btn.addEventListener('click', () =>{
         sliderNav(i)
+    });
+});
+
+let sliderNavigation = function(manu){
+    navBtn.forEach((nav) => {
+        nav.classList.remove('active');
+    });
+    navBtn[manu].classList.add('active')
+}
+navBtn.forEach((btnNavigation, index) => {
+    btnNavigation.addEventListener('click', () =>{
+        sliderNavigation(index)
     });
 });

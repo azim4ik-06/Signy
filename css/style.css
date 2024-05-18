@@ -3,7 +3,7 @@ body{
     color: rgba(6, 18, 36, 0.9);
 }
 .navbar{
-    margin: 0 5%;
+    margin: 0 8%;
 }
 .header{
     height: 100vh;
@@ -57,7 +57,7 @@ body{
     transition-property: clip-path;
 }
 .text-header{
-    margin: 5% 5% 0;
+    margin: 5% 8% 0;
     display: none;
 }
 .text-header.active{
@@ -120,5 +120,117 @@ body{
 }
 .information{
     background-color: #D8F1F0;
-    padding: 55px 5% 90px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 55px 8% 90px;
+}
+.info-text{
+    margin-right: 110px;
+}
+.ul-custom{
+    list-style-type: "-";
+    padding-left: 10px;
+    width: 500px;
+    font-size: 18px;
+}
+.li-custom{
+    padding-left: 10px;
+}
+.btn-information{
+    border: solid #1064E5 1.5px;
+    border-radius: 46px;
+    color: rgba(6, 18, 36, 0.9);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 50px;
+}
+.btn-information:hover{
+    box-sizing: border-box;
+    border: 1.5px solid rgb(16, 100, 229);
+    border-radius: 39px;
+    background: rgb(16, 100, 229);
+    color: #fff;
+}
+.img-right{
+    width: 600px;
+    height: 340px;
+}
+.info-text-right{
+    margin-left: 135px;
+}
+.li-custom{
+    padding-top: 10px;
+}
+.card-supscription{
+    width: 255px !important;
+    border-radius: 4px;
+    background: rgb(222, 238, 252);
+}
+.card-body-supscription{
+    padding: 32px;
+}
+.card-text{
+    padding-top: 40px;
+    font-weight: 500;
+}
+.number{
+    font-size: 48px;
+    font-weight: 700;
+}
+.btn-card{
+    border-radius: 100px;
+    background: rgb(16, 100, 229);
+    color: rgb(235, 245, 246);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 9px 16px 9px;
+    width: 190px;
+}
+.text-margin{
+    margin-bottom: 80px;
+}
+.num-run{
+    background: rgb(216, 241, 240);
+}
+.run-num{
+    font-size: 73px;
+    font-weight: 500;
+}
+.title-run-num{
+    font-weight: 500;
+    font-family: 'IBM Plex Serif';
+}
+.num-run-text{
+    font-size: 18px;
+    width: 470px;
+    text-align: center;
+}
+.slide-navigation-friend{
+    z-index: 888;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-btn-friend{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: solid 2px #1064e5;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.nav-btn-friend:not(:last-child){
+    margin-right: 25px;
+}
+.nav-btn-friend:hover{
+    transform: scale(1.2);
+}
+.nav-btn-friend.active{
+    background: rgb(16, 100, 229);
+}
+.img-gap{
+    gap: 95px;
 }
