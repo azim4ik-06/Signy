@@ -1,5 +1,6 @@
 const btns = document.querySelectorAll('.nav-btn');
-const navBtn = document.querySelectorAll('.nav-btn-friend')
+const navBtn = document.querySelectorAll('.nav-btn-friend');
+const imgCaruisel = document.querySelectorAll('.friend-slide');
 const slides = document.querySelectorAll('.header-img');
 const contents = document.querySelectorAll('.text-header');
 
@@ -31,7 +32,14 @@ let sliderNavigation = function(manu){
     navBtn.forEach((nav) => {
         nav.classList.remove('active');
     });
+    
+    imgCaruisel.forEach((img) => {
+        img.classList.remove('active');
+    });
+
+
     navBtn[manu].classList.add('active')
+    imgCaruisel[manu].classList.add('active')
 }
 navBtn.forEach((btnNavigation, index) => {
     btnNavigation.addEventListener('click', () =>{
