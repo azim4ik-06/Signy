@@ -35,3 +35,6 @@
 .nav-link:hover:before, .dropdown-item:hover:before{
     width: 100%;
 }
+.navbar-toggler-icon{
+    color: rgb(16, 100, 229);
+}

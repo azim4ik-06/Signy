@@ -53,3 +53,41 @@
     padding-top: 0;
     padding-left: 50px;
 }
+
+.accordion-button.active{
+    font-weight: 500;
+}
+
+@media(max-width:990px){
+    .accordion-button{
+        font-size: 16px;
+    }
+    .accordion-body{
+        font-size: 16px;
+    }
+}
+@media(max-width:776px){
+    .accordion{
+        width: 270px;
+        background: rgb(216, 241, 240);
+    }
+    .accordion-header{
+        background: rgb(216, 241, 240);
+    }
+    .accordion-button{
+        background: rgb(216, 241, 240);
+        font-size: 14px;
+    }
+    .accordion-button.active{
+        background: rgb(216, 241, 240);
+    }
+    .accordion-body{
+        background: rgb(216, 241, 240);
+        padding-right: 0;
+        width: 250px;
+        font-size: 14px;
+    }
+    .collapse{
+        background: rgb(216, 241, 240);
+    }
+}

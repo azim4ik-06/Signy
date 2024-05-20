@@ -2,6 +2,8 @@ const btns = document.querySelectorAll('.nav-btn');
 const navBtn = document.querySelectorAll('.nav-btn-friend');
 const imgCaruisel = document.querySelectorAll('.friend-slide');
 const slides = document.querySelectorAll('.header-img');
+const slidesMd = document.querySelectorAll('.header-img-md');
+const slidesSm = document.querySelectorAll('.header-img-sm');
 const contents = document.querySelectorAll('.text-header');
 
 let sliderNav = function(manual){
@@ -17,9 +19,20 @@ let sliderNav = function(manual){
         content.classList.remove('active');
     });
 
+    slidesMd.forEach((slideMD) => {
+        slideMD.classList.remove('active');
+    });
+    
+    slidesSm.forEach((slideSM) => {
+        slideSM.classList.remove('active');
+    });
+
+
     btns[manual].classList.add('active');
     slides[manual].classList.add('active');
     contents[manual].classList.add('active');
+    slidesMd[manual].classList.add('active');
+    slidesSm[manual].classList.add('active');
 }
 
 btns.forEach((btn, i) => {
