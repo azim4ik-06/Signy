@@ -66,6 +66,84 @@
               </div>
             </div>
         </nav>
+        <div class="overlay d-none position-absolute" id="overlay"></div>
+        <div class="navbar-menu d-none position-fixed" id="navbarMenu">
+          <div class="d-flex logo-md mb-4 ms-2 me-2">
+            <img src="images/icons/Logo.svg" alt="">
+            <button class="btn btn-X" type="button"><img src="images/icons/nav-close.svg" width="21" height="21" alt=""></button>
+          </div>
+          <hr>
+          <div class="d-flex flex-column justify-content-center align-items-start mt-4 ms-2">
+            <p>0 800 750 643</p>
+            <p>+380 44 334 56 43</p>
+            <p>+380 44 338 86 43</p>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-center align-items-start mt-4 mb-4 ms-2 me-2 gap-4">
+            <button type="button" class="btn btn-sign-nav">ВХОД</button>
+            <button type="button" class="btn btn-log-in-nav">РЕГИСТРАЦИЯ</button>
+          </div>
+          <hr class="mb-4">
+          <div class="d-flex flex-column justify-content-center align-items-start ms-2">
+            <ul class="list-unstyled">
+              <li class="list-unstyled-text"><a href="#" class="list-unstyled">ПРО НАС</a></li>
+              <li class="list-unstyled-text"><a href="#" class="list-unstyled">БЛОГ</a></li>
+              <li class="list-unstyled-text"><a href="#" class="list-unstyled">ВИДЕО</a></li>
+              <li class="list-unstyled-text"><a href="#" class="list-unstyled">ВОПРОСЫ</a></li>
+              <li class="list-unstyled-text"><a href="#" class="list-unstyled">ЦЕНЫ</a></li>
+              <li class="list-unstyled-text-last-child"><a href="#" class="list-unstyled">КОНТАКТЫ</a></li>
+            </ul>
+          </div>
+          <hr>
+          <div class="d-flex align-items-start mt-4 mb-4 ms-2 gap-4">
+            <a href="#" class="list_a">УКР</a>
+            <a href="#" class="list_a">РУС</a>
+          </div>
+        </div>
+
+        <div class="navbar-menu-sm d-none position-fixed" id="navbarMenuSm">
+          <div class="d-flex logo-sm justify-content-between mb-4">
+            <img src="images/icons/Logo.svg" alt="">
+            <button class="btn btn-X-sm" type="button"><img src="images/icons/nav-close.svg" width="14" height="14" alt=""></button>
+          </div>
+          <hr>
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item-sm dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    0 800 750 643
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">+380 44 334 56 43</a></li>
+                  <li><a class="dropdown-item" href="#">+380 44 338 86 43</a></li>
+                </ul>
+            </li>
+            <li class="nav-item-sm dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ПРО НАС
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">блог</a></li>
+                <li><a class="dropdown-item" href="#">Видео</a></li>
+                <li><a class="dropdown-item" href="#">Вопросы</a></li>
+              </ul>
+            </li>
+          <li class="nav-item-sm">
+            <a class="nav-link" href="#">ЦЕНЫ</a>
+          </li>
+          <li class="nav-item-sm">
+            <a class="nav-link" href="#">КОНТАКТЫ</a>
+          </li>
+          <div class="d-flex flex-column justify-content-center align-items-start mt-4 gap-4">
+            <button type="button" class="btn btn-sign-nav">ВХОД</button>
+            <button type="button" class="btn btn-log-in-nav">РЕГИСТРАЦИЯ</button>
+          </div>
+          <hr>
+          <div class="d-flex align-items-start gap-4">
+            <a href="#" class="list_a nav-link">УКР</a>
+            <a href="#" class="list_a nav-link">РУС</a>
+          </div>
+        </div>
+
         <div class="carusel">
           <img src="images/header-img-1.png" class="header-img active" alt="">
           <img src="images/header-img-md-1.png" class="header-img-md active" alt="">
@@ -196,7 +274,7 @@
               <h5 class="card-title">Demo</h5>
               <p class="card-text card-text-supscription">30 документов</p>
               <p><span class="number">0</span>грн/месяц</p>
-              <a href="#" class="btn btn-card">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+              <a href="#" class="btn btn-card btn-card-reg">ЗАРЕГИСТРИРОВАТЬСЯ</a>
             </div>
           </div>
         </div>
@@ -229,6 +307,43 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="overlay-demo position-absolute" id="overlay"></div>
+    <div class="demo-version d-flex flex-column justify-content-center align-items-center position-fixed">
+      <button class="btn btn-X btn-X-demo position-absolute top-0 end-0 mt-4 me-3" type="button"><img src="images/icons/nav-close.svg" width="21" height="21" alt=""></button>
+      <div class="header-demo d-flex flex-column justify-content-center align-items-center">
+        <h1 class="header-text-demo">Демо версия</h1>
+        <p class="text-demo">Заполни форму и наши менеджеры свяжутся с тобой</p>
+        <form class="needs-validation" novalidate>
+          <div>
+            <label for="validationCustom01" class="form-label">Имя*:</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="Иван" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div>
+            <label for="validationCustom02" class="form-label">Электронная почта*:</label>
+            <input type="text" class="form-control" id="validationCustom02" placeholder="ivan@mail.com" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div>
+            <label for="validationCustomUsername" class="form-label">Телефон*:</label>
+            <div class="input-group has-validation">
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" placeholder="+38 000 000 00 00" required>
+              <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </div>
+        </form>
       </div>
     </div>
 
@@ -440,7 +555,7 @@
             <a href="#" class="footer_a">Facebook</a>
           </div>
           <a class="width-a d-none d-lg-none d-sm-none d-md-block" href="#"><img src="images/icons/upping.svg" alt=""></a>
-          <div class="d-flex flex-column ">
+          <div class="d-flex flex-column max-width-sm-footer">
             <p class="footer-text">пр-т Николая Бажана, 14 А
               Киев, 02072</p>
             <p class="footer-text">0 800 750643</p>

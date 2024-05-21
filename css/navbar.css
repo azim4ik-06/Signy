@@ -38,3 +38,100 @@
 .navbar-toggler-icon{
     color: rgb(16, 100, 229);
 }
+@media(max-width: 1025px){
+    .overlay{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1000%;
+        backdrop-filter: blur(34px);
+        background: rgba(6, 18, 36, 0.7);
+        z-index: 999;
+    }
+    .navbar-menu{
+        background-color: #fff;
+        width: 50%;
+        height: 120vh;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 35px 40px;
+    }
+    .logo-md{
+        justify-content: space-between;
+    }
+    hr{
+        color: rgb(16, 100, 229);
+        height: 2px;
+    }
+    .list-unstyled{
+        text-decoration: none;        
+        color: rgb(6, 18, 36);
+    }
+    .list-unstyled-text, .list-unstyled-text-last-child{
+        font-size: 18px;
+        font-weight: 500;
+        padding-bottom: 60px;
+    }
+    .list-unstyled-text-last-child{
+        padding-bottom: 0;
+    }
+    .btn-sign-nav{
+        border: 1.5px solid rgb(16, 100, 229);
+        border-radius: 43px;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 11px 32px;
+        width: 110px;
+    }
+    .btn-sign-nav:hover{
+        color: #fff;
+        border: 1.5px solid rgb(16, 100, 229);
+        border-radius: 39px;
+        background: rgb(16, 100, 229);
+    }
+    .btn-log-in-nav{
+        border-radius: 45px;
+        background: rgb(16, 100, 229);
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        padding: 11px 32px;
+    }
+    .btn-log-in-nav:hover{
+        border: 1.5px solid rgb(16, 100, 229);
+        border-radius: 38px;
+        background: rgb(255, 255, 255);
+        color: rgb(16, 100, 299);
+    }
+    .list_a{
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        color: rgb(6, 18, 36);
+    }
+}
+@media(max-width: 767px){
+    .navbar-menu{
+        display: none;
+    }
+    .navbar-menu-sm{
+        background-color: #fff;
+        width: 100%;
+        height: 120vh;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 35px 40px;
+    }
+    .nav-item-sm{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .btn-sign-nav{
+        width: 100%;
+    }
+    .btn-log-in-nav{
+        width: 100%;
+    }
+}
