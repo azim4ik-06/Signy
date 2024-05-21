@@ -3,37 +3,37 @@ const emailInput = document.querySelector("#validationCustomUsername");
 
 form.addEventListener("submit", addForm);
 
-const forms = [];
+let forms = [];
 if (localStorage.getItem('forms')) {
-    const formsJSON = localStorage.getItem('forms');
-    const formArr = JSON.parse(formsJSON);
-    forms.push(...formArr);
-    console.log(forms);
+  forms = JSON.parse(localStorage.getItem('forms'));
 }
 
 function addForm(evt) {
-    evt.preventDefault();
-    const emailValue = emailInput.value.trim();
+  evt.preventDefault();
+  const emailValue = emailInput.value.trim();
 
-    emailInput.classList.remove("is-invalid");
+  emailInput.classList.remove("is-invalid");
+  emailInput.classList.remove("is-valid");
 
-    const isValid = form.checkValidity(); 
+  const isValid = form.checkValidity();
 
+  if (!isValid) {
+    emailInput.classList.add("is-invalid");
+  } else {
+    emailInput.classList.add("is-valid");
+  }
 
-    if (!isValid) {
+  if (!isValid) {
+    return;
+  }
 
-        emailInput.classList.add("is-invalid");
-        return;
-    }
+  const newForm = {
+    id: crypto.randomUUID(),
+    email: emailValue,
+  };
 
-    const newForm = {
-        id: crypto.randomUUID(),
-        email: emailValue,
-    };
+  forms.push(newForm);
+  localStorage.setItem('forms', JSON.stringify(forms));
 
-    forms.push(newForm);
-    localStorage.setItem('forms', JSON.stringify(forms));
-
-    emailInput.value = '';
-
+  emailInput.value = '';
 }
