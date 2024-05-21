@@ -316,7 +316,35 @@
       <div class="header-demo d-flex flex-column justify-content-center align-items-center">
         <h1 class="header-text-demo">Демо версия</h1>
         <p class="text-demo">Заполни форму и наши менеджеры свяжутся с тобой</p>
+        <form class="needs-validation needs-validation-demo" data-id="needs-validation" novalidate>
+          <div>
+            <label for="validationDefault01" class="form-label">Имя*:</label>
+            <input type="text" class="form-control form-demo" id="validationDefault01" placeholder="Иван" required>
+          </div>
+          <div>
+            <label for="validationDefault02" class="form-label label-demo">Электронная почта*:</label>
+            <input type="text" class="form-control form-demo" id="validationDefault02" placeholder="ivan@mail.com" required>
+          </div>
+          <div>
+            <label for="validationDefaultUsernameDemo" class="form-label label-demo">Телефон*:</label>
+            <div class="input-group input-group-demo">
+              <input type="text" class="form-control form-demo" id="validationDefaultUsernameDemo" placeholder="+38 000 000 00 00" aria-describedby="inputGroupPrepend2" required>
+            </div>
+          </div>
+          <div>
+            <button class="btn btn-form-demo" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
 
+    <div class="demo-thanks d-none d-flex flex-column justify-content-center align-items-cente position-fixed">
+      <button class="btn btn-X btn-X-demo-thanks position-absolute top-0 end-0 mt-4 me-3" type="button"><img src="images/icons/nav-close.svg" width="21" height="21" alt=""></button>
+      <div class="header-demo d-flex flex-column justify-content-center align-items-center">
+        <h1 class="header-demo-thanks">Спасибо</h1>
+        <p class="text-demo-thanks">Твое сообщение отправленно!
+          Наши менеджеры свяжутся с тобой в ближайшее время</p>
+          <img src="images/icons/sms.svg" alt="">
       </div>
     </div>
 
@@ -483,7 +511,7 @@
       <h1 class="subscripe-header-text">Подпишись на наши новости!</h1>
       <p class="subscripe-text pt-3 pb-3">Введи свой электронный адрес и будь в курсе всех обновлений</p>
       <div class="d-flex width-validation">
-        <form class="needs-validation" novalidate>
+        <form class="needs-validation needs-validation-form" novalidate>
           <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-width">
             <div class="col col-lg-6 col-width-email">
               <label for="validationCustomUsername" class="form-label">
@@ -552,6 +580,8 @@
 </body>
 <script src="js/navbar.js"></script>
 <script src="js/carusel.js"></script>
+<script src="js/demo-reg.js"></script>
+<script src="js/demo-form.js"></script>
 <script src="js/num-run-scroll.js"></script>
 <script src="js/accordion.js"></script>
 <script src="js/form-control.js"></script>
