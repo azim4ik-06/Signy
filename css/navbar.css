@@ -21,6 +21,7 @@
 .nav-link, .dropdown-item{
     position: relative;
     transition: 0.3s ease;
+    letter-spacing: 2px;
 }
 .nav-link::before, .dropdown-item::before{
     content: '';

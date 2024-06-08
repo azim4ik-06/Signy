@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="fonts/IBM_Plex_Sans/IBM_Sans.css">
+    <link rel="stylesheet" href="fonts/IBM_Plex_Serif/IBM_Serif.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-blog navbar-expand-lg d-flex justify-content-center align-items-center">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/icons/Logo.svg" alt=""></a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav gap-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        0 800 750 643
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">+380 44 334 56 43</a></li>
+                      <li><a class="dropdown-item" href="#">+380 44 338 86 43</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    ПРО НАС
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="blog.html">блог</a></li>
+                    <li><a class="dropdown-item" href="#">Видео</a></li>
+                    <li><a class="dropdown-item" href="#">Вопросы</a></li>
+                  </ul>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ЦЕНЫ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">КОНТАКТЫ</a>
+              </li>
+              <li>
+                <button class="btn btn-sign-in" type="button">ВХОД</button>
+              </li>
+              <li>
+                <button class="btn btn-log-in" type="button">РЕГИСТРАЦИЯ</button>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    РУС
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">блог</a></li>
+                  <li><a class="dropdown-item" href="#">Видео</a></li>
+                  <li><a class="dropdown-item" href="#">Вопросы</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="overlay d-none position-absolute" id="overlay"></div>
+    <div class="navbar-menu d-none position-fixed" id="navbarMenu">
+      <div class="d-flex logo-md mb-4 ms-2 me-2">
+        <img src="images/icons/Logo.svg" alt="">
+        <button class="btn btn-X" type="button"><img src="images/icons/nav-close.svg" width="21" height="21" alt=""></button>
+      </div>
+      <hr>
+      <div class="d-flex flex-column justify-content-center align-items-start mt-4 ms-2">
+        <p>0 800 750 643</p>
+        <p>+380 44 334 56 43</p>
+        <p>+380 44 338 86 43</p>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-center align-items-start mt-4 mb-4 ms-2 me-2 gap-4">
+        <button type="button" class="btn btn-sign-nav">ВХОД</button>
+        <button type="button" class="btn btn-log-in-nav">РЕГИСТРАЦИЯ</button>
+      </div>
+      <hr class="mb-4">
+      <div class="d-flex flex-column justify-content-center align-items-start ms-2">
+        <ul class="list-unstyled">
+          <li class="list-unstyled-text"><a href="#" class="list-unstyled">ПРО НАС</a></li>
+          <li class="list-unstyled-text"><a href="#" class="list-unstyled">БЛОГ</a></li>
+          <li class="list-unstyled-text"><a href="#" class="list-unstyled">ВИДЕО</a></li>
+          <li class="list-unstyled-text"><a href="#" class="list-unstyled">ВОПРОСЫ</a></li>
+          <li class="list-unstyled-text"><a href="#" class="list-unstyled">ЦЕНЫ</a></li>
+          <li class="list-unstyled-text-last-child"><a href="#" class="list-unstyled">КОНТАКТЫ</a></li>
+        </ul>
+      </div>
+      <hr>
+      <div class="d-flex align-items-start mt-4 mb-4 ms-2 gap-4">
+        <a href="#" class="list_a">УКР</a>
+        <a href="#" class="list_a">РУС</a>
+      </div>
+    </div>
+
+    <div class="navbar-menu-sm d-none position-fixed" id="navbarMenuSm">
+      <div class="d-flex logo-sm justify-content-between mb-4">
+        <img src="images/icons/Logo.svg" alt="">
+        <button class="btn btn-X-sm" type="button"><img src="images/icons/nav-close.svg" width="14" height="14" alt=""></button>
+      </div>
+      <hr>
+      <ul class="navbar-nav gap-4">
+        <li class="nav-item-sm dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                0 800 750 643
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">+380 44 334 56 43</a></li>
+              <li><a class="dropdown-item" href="#">+380 44 338 86 43</a></li>
+            </ul>
+        </li>
+        <li class="nav-item-sm dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            ПРО НАС
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">блог</a></li>
+            <li><a class="dropdown-item" href="#">Видео</a></li>
+            <li><a class="dropdown-item" href="#">Вопросы</a></li>
+          </ul>
+        </li>
+      <li class="nav-item-sm">
+        <a class="nav-link" href="#">ЦЕНЫ</a>
+      </li>
+      <li class="nav-item-sm">
+        <a class="nav-link" href="#">КОНТАКТЫ</a>
+      </li>
+      <div class="d-flex flex-column justify-content-center align-items-start mt-4 gap-4">
+        <button type="button" class="btn btn-sign-nav">ВХОД</button>
+        <button type="button" class="btn btn-log-in-nav">РЕГИСТРАЦИЯ</button>
+      </div>
+      <hr>
+      <div class="d-flex align-items-start gap-4">
+        <a href="#" class="list_a nav-link">УКР</a>
+        <a href="#" class="list_a nav-link">РУС</a>
+      </div>
+    </div>
+
+    <nav class="breadcrumb-header" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-item">Signy</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Блог</li>
+        </ol>
+    </nav>
+
+    <div class="header">
+        <h1 class="header-title">Интересно пишем про</h1>
+        <div class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 mt-4">
+            <img src="images/Note.png" class="img-note" alt="">
+            <div class="header-text">
+                <p class="text-title">28.05.2020</p>
+                <h1 class="header-text-title">Burn Calories 
+                    Quicker in 30 Min.</h1>
+                <div class="d-flex gap-3 ms-1">
+                    <p class="header-text-info">про продукт</p>
+                    <p class="header-text-info">теги</p>
+                    <p class="header-text-info">много тегов</p>
+                </div>
+                <p class="text-width">Идейные соображения высшего порядка, а также 
+                    укрепление и развитие структуры играет важную
+                    роль в формировании существенных финансовых и 
+                    административных условий. <br>
+                    Не следует, однако забывать, что дальнейшее 
+                    развитие различных форм деятельности 
+                    способствует подготовки и реализации форм 
+                    развития.</p>
+                <a href="#" class="text-string d-none d-lg-block">Читать</a>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex nav-info d-none d-lg-block">
+        <ul class="d-flex gap-5 list-unstyled">
+            <li><a href="" class="list-item">Все</a></li>
+            <li><a href="" class="list-item">новости</a></li>
+            <li><a href="" class="list-item">обучение</a></li>
+            <li><a href="" class="list-item">законы</a></li>
+        </ul>
+    </div>
+    <div class="dropdown nav-info-md-sm d-block d-lg-none">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Все
+        </button>
+        <ul class="dropdown-menu dropdown-menu-info">
+          <li><a class="dropdown-item dropdown-item-info" href="#">новости</a></li>
+          <li><a class="dropdown-item dropdown-item-info" href="#">обучение</a></li>
+          <li><a class="dropdown-item dropdown-item-info" href="#">законы</a></li>
+        </ul>
+    </div>
+
+    <div class="card-header">
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-pagination active">
+            <div class="card border-0 mb-5">
+                <img src="images/device.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/note_2.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/woman_works.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/device.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/note_2.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/woman_works.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/device.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/note_2.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/woman_works.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-pagination">
+            <div class="card border-0 mb-5">
+                <img src="images/note_2.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/device.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/woman_works.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/device.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/note_2.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/woman_works.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/device.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/note_2.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/woman_works.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-pagination">
+            <div class="card border-0 mb-5">
+                <img src="images/device.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/note_2.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/woman_works.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/device.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/note_2.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/woman_works.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/device.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/note_2.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/woman_works.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-pagination">
+            <div class="card border-0 mb-5">
+                <img src="images/device.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/note_2.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/woman_works.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/device.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/note_2.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/woman_works.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+            <div class="card border-0 mb-5">
+                <img src="images/device.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 pt-2">
+                  <p class="card-num mb-0">05.03.2020</p>
+                  <h5 class="card-title">Burn Calories Quicker in 30 Min.</h5>
+                  <div class="d-flex gap-3">
+                    <p class="header-text-info mb-0">про продукт</p>
+                    <p class="header-text-info mb-0">теги</p>
+                    </div>
+                  <p class="card-text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <nav>
+                <ul class="pagination">
+                  <li class="page-item active"><a class="page-link" href="#">01</a></li>
+                  <li class="page-item" aria-current="page">
+                    <a class="page-link" href="#">02</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">03</a></li>
+                  <li class="page-item"><a class="page-link" href="#">04</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">дальше</a>
+                  </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="subscripe d-flex flex-column justify-content-center align-items-center mt-3 pt-5 pb-5">
+        <h1 class="subscripe-header-text">Подпишись на наши новости!</h1>
+        <p class="subscripe-text pt-3 pb-3">Введи свой электронный адрес и будь в курсе всех обновлений</p>
+        <div class="d-flex width-validation">
+          <form class="needs-validation needs-validation-form" novalidate>
+            <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-width">
+              <div class="col col-lg-6 col-width-email">
+                <label for="validationCustomUsername" class="form-label">
+                  <div class="input-group has-validation">
+                    <input type="email" class="form-control email" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Введите корректную электронную почту.
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="col col-lg-6 col-width-btn">
+                <button type="submit" class="btn btn-email">ОТПРАВИТЬ</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="seo-text d-flex flex-column justify-content-center align-items-center">
+        <h1 class=" align-self-start">SEO текст</h1>
+        <p>Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности требуют от нас анализа существенных финансовых и административных условий. Задача организации, в особенности же укрепление и развитие структуры позволяет оценить значение новых предложений. С другой стороны постоянный количественный рост и сфера нашей активности требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке соответствующий условий активизации. Разнообразный и богатый опыт начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Задача организации, в особенности же укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий.
+
+            Повседневная практика показывает, что реализация намеченных плановых заданий позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации позволяет</p>
+        <h1 class=" align-self-start">Повседневная практика показывает</h1>
+        <p>Разнообразный и богатый опыт рамки и место обучения кадров представляет собой интересный эксперимент проверки форм развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. Не следует, однако забывать, что укрепление и развитие структуры позволяет оценить значение направлений прогрессивного развития. С другой стороны консультация с широким активом влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание новых предложений.</p>
+        <h1 class=" align-self-start">Реализация намеченных плановых</h1>
+        <p>Равным образом сложившаяся структура организации требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Товарищи! консультация с широким активом влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке соответствующий условий активизации.</p>
+
+        <p>Значимость этих проблем настолько очевидна, что новая модель организационной деятельности способствует подготовки и реализации новых предложений. Товарищи! консультация с широким активом влечет за собой процесс внедрения и модернизации модели развития. С другой стороны рамки и место обучения кадров играет важную роль в формировании систем массового участия. Товарищи! новая модель организационной деятельности влечет за собой процесс внедрения и модернизации модели развития.</p>
+            
+        <p>С другой стороны постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке форм развития. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание соответствующий условий активизации. Равным образом реализация намеченных плановых заданий играет важную роль в формировании форм развития.</p>
+        <button class="" type="button">Развернуть <img src="images/icons/down.svg" alt=""></button>
+      </div>
+      <div class="footer">
+        <div class="d-flex display-footer">
+          <div class="d-flex justify-content-between">
+            <img src="images/icons/Logo_Footer.svg" class="align-self-start" alt="">
+            <a href="#" class="d-lg-none d-md-none d-sm-block"><img src="images/icons/upping.svg" width="30" height="35" alt=""></a>
+          </div>
+          <div class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-2 row-width-footer">
+            <div class="col col-width-footer">
+              <a href="#" class="footer_a">Про нас</a>
+              <a href="#" class="footer_a">Цены</a>
+            </div>
+            <div class="col col-width-footer">
+              <a href="#" class="footer_a">Блог</a>
+              <a href="#" class="footer_a">Контакты</a>
+            </div>
+            <div class="col col-width-footer">
+              <a href="#" class="footer_a">Вход</a>
+              <a href="#" class="footer_a">Регистрация</a>
+            </div>
+          </div>
+          <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 width-footer">
+            <div class="d-flex flex-column max-width-footer">
+              <a href="#" class="footer_a">infosmartsign@smarttender.biz</a>
+              <a href="#" class="footer_a">Facebook</a>
+            </div>
+            <a class="width-a d-none d-lg-none d-sm-none d-md-block" href="#"><img src="images/icons/upping.svg" alt=""></a>
+            <div class="d-flex flex-column max-width-sm-footer">
+              <p class="footer-text">пр-т Николая Бажана, 14 А
+                Киев, 02072</p>
+              <p class="footer-text">0 800 750643</p>
+              <p class="footer-text">+380 44 334 56 43</p>
+              <p class="footer-text">+380 44 338 86 43</p>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-2 row-width_footer">
+          <div class="col col_width_footer">
+            <p class="footer_text">© 2020 Signy</p>
+          </div>
+          <div class="col col-width_footer">
+            <p class="footer_text">Договор оферты</p>
+          </div>
+          <div class="col">
+            <p class="footer_text">Безопасность сервиса</p>
+          </div>
+        </div>
+      </div>
+</body>
+<script src="js/navbar.js"></script>
+<script src="js/pagination.js"></script>
+</html>

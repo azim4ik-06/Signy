@@ -2,6 +2,11 @@ const formControl = document.querySelector(".needs-validation-demo");
 const nameInputControl = document.querySelector("#validationDefault01");
 const emailInputControl = document.querySelector("#validationDefault02");
 const subjectInput = document.querySelector("#validationDefaultUsernameDemo");
+const overlayDemo2 = document.querySelector('.overlay-demo-2');
+const demoVersion2 = document.querySelector('.demo-version-2');
+const btnFormDemo = document.querySelector('.btn-form-demo');
+const demoThanks = document.querySelector('.demo-thanks');
+const btnXDemoThanks = document.querySelector('.btn-X-demo-thanks');
 
 console.log(formControl);
 formControl.addEventListener("submit", addFormControl);
@@ -33,9 +38,20 @@ function addFormControl(evt) {
     nameInputControl.classList.add("is-invalid");
     subjectInput.classList.add("is-invalid");
   } else {
-    emailInput.classList.add("is-valid");
+    emailInputControl.classList.add("is-valid");
     nameInputControl.classList.add("is-valid");
     subjectInput.classList.add("is-valid");
+
+    demoVersion2.classList.toggle('d-none');
+    demoThanks.classList.toggle('d-none');
+
+
+    btnXDemoThanks.addEventListener('click', closeDemoThanks);
+
+    function closeDemoThanks() {
+      overlayDemo2.classList.toggle('d-none');
+      demoThanks.classList.toggle('d-none');
+}
   }
 
   if (!isValid) {

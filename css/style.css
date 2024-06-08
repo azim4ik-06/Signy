@@ -17,6 +17,7 @@ body{
     border-radius: 43px;
     color: rgba(6, 18, 36, 0.9);
     padding: 8px 32px;
+    letter-spacing: 2px;
 }
 .btn-sign-in:hover{
     border-radius: 39px;
@@ -29,6 +30,7 @@ body{
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 8px 32px;
+    letter-spacing: 2px;
 }
 .btn-log-in:hover{
     border: 1.5px solid rgb(16, 100, 229);
@@ -83,6 +85,8 @@ body{
     text-align: center;
     color: rgb(255, 255, 255);
     padding: 7px 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 .btn-header:hover{
     border: 1.5px solid rgb(16, 100, 229);
@@ -207,9 +211,10 @@ body{
     background: rgb(16, 100, 229);
     color: rgb(235, 245, 246);
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 600;
     padding: 9px 16px 9px;
     width: 190px;
+    letter-spacing: 1px;
 }
 .text-margin{
     margin-bottom: 80px;
@@ -351,6 +356,7 @@ body{
     background: rgb(16, 100, 229);
     color: #fff;
     font-size: 14px;
+    letter-spacing: 2px;
 }
 .btn-email:hover{
     border: solid #1064E5 1.5px;
