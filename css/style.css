@@ -756,7 +756,10 @@ body{
         margin: 45px 0; 
     }
     .card-back-color::before{
-        width: 320px;
+        width: 100%;
+    }
+    .card-img{
+        width: 100%;
     }
     .run-num{
         font-size: 36px;
@@ -835,28 +838,47 @@ body{
         max-width: 100%;
     }
     .col-width-email{
-        max-width: 70%;
-        padding: 0 20px 20px;
+        min-width: 90% !important;
+        padding: 0 12% 20px;
+    }
+    .input-group{
+        width: 280px;
     }
     .email{
-        max-width: 95% !important;
+        min-width: 280px !important;
     }
     .col-width-btn{
         max-width: 200px !important;
     }
+    .email{
+        max-width: 260px !important;
+    }
     .display-footer{
         flex-direction: column;
     }
+    .footer{
+        overflow: hidden;
+        padding: 20px;
+    }
     .row-width-footer{
-        display: block;
         margin-left: 0;
         margin-top: 20px;
-        width: 100px;
-        height: 200px;
-        gap: 10px;
+        width: 100%;
+        height: 150px;
+    }
+    .col-width-footer{
+        min-width: 135px !important;
+    }
+    .col-order-1{
+        order: 1;
+    }
+    .col-order-2{
+        order: 2;
     }
     .footer_a{
         margin-bottom: 20px;
+        padding-right: 60%;
+        min-width: 100% !important;
     }
     .max-width-footer{
         padding-top: 20px;
@@ -883,9 +905,6 @@ body{
     .demo-version{
         left: 5%;
         width: 90%;
-    }
-    .form-label{
-        padding-left: 10%;
     }
     .form-demo{
         max-width: 80%;
@@ -935,64 +954,47 @@ body{
     .max-width-sm-footer{
         max-width: 60%;
     }
-    .email{
-        max-width: 60%;
-    }
-    .input-group{
-        max-width: 300px;
-    }
 }
 
 @media(max-width:415px){
     .header{
-        height: 66vh;
+        height: 62vh;
     }
     .header-img-sm.active{
-        height: 66vh;
+        height: 62vh;
     }
     .slide-navigation{
         transform: translateY(20px);
     }
 }
 
-@media(max-width:380px){
+@media(max-width: 390px){
     .header{
-        height: 85vh;
+        height: 69vh;
     }
     .header-img-sm.active{
-        height: 85vh;
+        height: 69vh;
+    }
+}
+
+@media(max-width:380px){
+    .header{
+        height: 87vh;
+    }
+    .header-img-sm.active{
+        height: 87vh;
     }
     .watch-note-img{
         height: 250px;
-    }
-    .col-width-email{
-        max-width: 62%;
-        padding: 0 10px 20px !important;
-    }
-    .email{
-        width: 200px !important;
-    }
-    .col-width-btn{
-        max-width: 50% !important;
-        padding: 0 25px;
-    }
-    .input-group{
-        width: 250px;
-    }
-    .email{
-        max-width: 70%;
-    }
-    .btn-email{
-        max-width: 90%;
     }
 }
 
 @media(max-width:360px){
     .header{
-        height: 75vh;
+        height: 77vh;
     }
     .header-img-sm.active{
-        height: 75vh;
+        height: 77vh;
     }
 }
 
