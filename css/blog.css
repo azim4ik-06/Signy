@@ -229,7 +229,7 @@ body{
 
 }
 .read-more-checker ~ .read-more-btn:after{
-    content: "Развернуть " url(../images/icons/down.svg);
+    content: "Развернуть " url(../images/icons/down-for-more-learn.svg);
 }
 .read-more-checker:checked ~ .read-more-btn:after{
     content: "свернуть ^";

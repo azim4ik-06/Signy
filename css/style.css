@@ -902,18 +902,44 @@ body{
         font-size: 14px;
         width: 230px;
     }
+    .btn-form-demo{
+        margin: 25px 19% 3px;
+        height: 50px;
+        text-transform: uppercase;
+    }
     .demo-version{
         left: 5%;
         width: 90%;
+        padding: 30px 15px;
+    }
+    .form-label{
+        font-size: 14px;
+        padding-left: 7%;
     }
     .form-demo{
-        max-width: 80%;
+        max-width: 100%;
         height: 40px;
-        margin: 0 5%;
         padding: 13px 22px;
     }
+    .label-demo{
+        margin-top: 10px;
+    }
     .input-group-demo{
-        max-width: 100% !important;
+        min-width: 100% !important;
+    }
+    .demo-thanks{
+        left: 5%;
+        width: 90%;
+        padding-bottom: 40px;
+    }
+    .header-demo-thanks{
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .text-demo-thanks{
+        font-size: 14px;
+        width: 230px;
     }
 }
 
@@ -958,10 +984,10 @@ body{
 
 @media(max-width:415px){
     .header{
-        height: 62vh;
+        height: 65vh;
     }
     .header-img-sm.active{
-        height: 62vh;
+        height: 65vh;
     }
     .slide-navigation{
         transform: translateY(20px);
